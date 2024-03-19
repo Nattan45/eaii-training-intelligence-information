@@ -1,0 +1,31 @@
+rootProject.name = 'intellegenceInformation'
+
+
+include ":intelinfo"
+
+//include 'informant-service:'
+//findProject(':informant-service:informant-data')?.name = 'informant-data'
+
+
+
+include ':informant-Domain-core'
+project(':informant-Domain-core').projectDir = file('informant-service/informant-Domain/informant-Domain-core')
+
+include 'informant-Domain-application'
+project(':informant-Domain-application').projectDir = file('informant-service/informant-Domain/informant-Domain-application')
+
+
+
+include ':informant-data'
+project(':informant-data').projectDir = file('informant-service/informant-data')
+
+
+include ':informant-container'
+project(':informant-container').projectDir = file('informant-service/informant-container')
+
+include ':informant-application'
+project(':informant-application').projectDir = file('informant-service/informant-application')
+
+
+
+
