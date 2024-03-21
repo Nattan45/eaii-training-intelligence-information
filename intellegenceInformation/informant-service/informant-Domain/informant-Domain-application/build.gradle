@@ -10,6 +10,10 @@ repositories {
 }
 
 dependencies {
+    // pointing to the domain core since it is the our aggregate root which holds the domain-code
+    implementation project(":informant-Domain-core")
+
+    //      ??      ??      ??      ??      ??
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }

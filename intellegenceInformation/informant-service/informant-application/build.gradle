@@ -10,6 +10,15 @@ repositories {
 }
 
 dependencies {
+    // pointing to the domain application since it is the gate way to our aggregate root
+    implementation project(":informant-Domain-application")
+
+
+
+
+
+    //    implementation libs.org.springframework.boot.spring.boot.starter.web
+
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
